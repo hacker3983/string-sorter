@@ -8,6 +8,7 @@ gcc main.c -o string_sorter
 
 # Usage
 ```bash
+Usage: ./string_sorter [INPUT FILE] [ORDER]...
 Sorts strings in a given input file based on the specified order.
 If no order is provided, it sorts in alphabetical (ascending) order.
 
