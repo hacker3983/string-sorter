@@ -1,0 +1,5 @@
+# Ignore executable files
+string_sorter
+*.exe
+*.out
+*.app
