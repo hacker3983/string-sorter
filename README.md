@@ -1,5 +1,5 @@
 # String Sorter
-String sorter is a command line tool that allows you to sort strings from a file in either ascending or descending order.
+String sorter is a command line tool that allows you to sort strings from a file in either alphabetical (ascending) or reverse alphabetical (descending) order.
 
 # Build instructions
 ```
@@ -8,14 +8,14 @@ gcc main.c -o string_sorter
 
 # Usage
 ```bash
-Usage: ./string_sorter [FILE] [ORDER]...
-Sorts strings in a given file based on the given order.
-if no order is provided it sorts in ascending order
-Order:
-a - sorts in ascending order
-d - Sorts in descending order
+Sorts strings in a given input file based on the specified order.
+If no order is provided, it sorts in alphabetical (ascending) order.
 
-Note: The input file should contain strings, one per line.
+Order:
+a - sorts in alphabetical (ascending) order
+d - sorts in reverse alphabetical (descending) order
+
+Note: The input file should contain one string per line.
 ```
 
 # Examples
@@ -37,7 +37,7 @@ Let's say we want to sort numbers that are all the same length. Radix sort would
 
 2. Iterate through the digits of each number, one digit at a time (either from right to left or left to right).
 
-3. Place each number into the approriate bucket based on the current digit.
+3. Place each number into the appropriate bucket based on the current digit.
 
 4. Gather the numbers back in order after each pass though the digits.
 

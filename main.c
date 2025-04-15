@@ -326,14 +326,14 @@ int main(int argc, char** argv) {
 	bool sort_ascending = true;
 	if(argc < 2) {
 		fprintf(stderr,
-			"Usage: %s [FILE] [ORDER]...\n"
-			"Sorts strings in a given file based on the given order.\n"
-			"if no order is provided it sorts in ascending order\n"
+			"Usage: %s [INPUT FILE] [ORDER]...\n"
+			"Sorts strings in a given input file based on the specified order.\n"
+			"If no order is provided, it sorts in alphabetical (ascending) order.\n\n"
 			"Order:\n"
-			"a - sorts in ascending order\n"
-			"d - Sorts in descending order\n\n"
-			"Note: The input file should contain strings,"
-		        " one per line.\n",
+			"a - sorts in alphabetical (ascending) order\n"
+			"d - sorts in reverse alphabetical (descending) order\n\n"
+			"Note: The input file should contain one string"
+		        " per line.\n",
 			argv[0]
 		);
 		return -1;
