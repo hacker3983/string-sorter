@@ -41,4 +41,4 @@ Let's say we want to sort numbers that are all the same length. Radix sort would
 
 4. Gather the numbers back in order after each pass though the digits.
 
-This process repeats for each digit position.
+This process repeats for each digit position until all numbers are sorted.
